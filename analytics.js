@@ -2,7 +2,7 @@
 import { GoogleAnalyticsTracker } from 'react-native-google-analytics-bridge';
 
 // Amplitude.initialize('8b7cf19e8eea3cdcf16340f5fbf16330');
-const analytics = new GoogleAnalyticsTracker('UA-121673546-1');
+const analytics = new GoogleAnalyticsTracker('UA-000000000-1');
 
 let A = function(event) {
   // Amplitude.logEvent(event);
