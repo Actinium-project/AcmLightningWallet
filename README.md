@@ -8,19 +8,26 @@ Built with React Native and BlockCypher API.
 * SegWit-first. Replace-By-Fee support
 * Encryption. Plausible deniability
 
-Beta version, do not use to store large amounts!
-
 
 ## BUILD & RUN IT
 
 * In your console:
 
-```
+```shell
 git clone https://github.com/AcmLNWallet/AcmLNWallet.git
 cd AcmLNWallet
 npm install
 npm start android
 ``` 
+
+or when developing for **iOS**
+
+```shell
+git clone https://github.com/AcmLNWallet/AcmLNWallet.git
+cd AcmLNWallet
+npm install
+npm start ios
+```
 
 ## TESTS
 
@@ -31,7 +38,3 @@ npm run test
 ## LICENSE
 
 MIT
-
-## WANT TO CONTRIBUTE?
-
-Grab an issue from [the backlog](https://github.com/AcmLNWallet/AcmLNWallet/projects/1), try to start or submit a PR, any doubts we will try to guide you.
