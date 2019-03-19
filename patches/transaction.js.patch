@@ -1,0 +1,15 @@
+diff --git a/node_modules/src/transaction.js b/node_modules/src/transaction.js
+index 751446f..aba1b41 100644
+--- a/node_modules/src/transaction.js
++++ b/node_modules/src/transaction.js
+@@ -408,7 +408,9 @@ Transaction.prototype.getHash = function () {
+ 
+ Transaction.prototype.getId = function () {
+   // transaction hash's are displayed in reverse order
+-  return this.getHash().reverse().toString('hex')
++  //return this.getHash().reverse().toString('hex')
++  var bufferReverse = require('buffer-reverse');
++  return bufferReverse(this.getHash()).toString('hex');
+ }
+ 
+ Transaction.prototype.toBuffer = function (buffer, initialOffset) {

@@ -170,7 +170,7 @@ function tryToPay(invoice) {
 setInterval(function() {
 window.postMessage('interval');
 
-	var searchText = "lnbc";
+	var searchText = "lnacm";
 
 	var aTags = document.getElementsByTagName("span");
 	var i;
@@ -192,7 +192,7 @@ window.postMessage('interval');
 	/* ------------------------- */
 
 	aTags = document.getElementsByTagName("a");
-	searchText = "lightning:lnbc";
+	searchText = "lightning:lnacm";
 
 
 	for (i = 0; i < aTags.length; i++) {

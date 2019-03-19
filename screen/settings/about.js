@@ -59,9 +59,9 @@ export default class About extends Component {
                 color: BlueApp.settings.buttonTextColor,
               }}
               onPress={() => {
-                Linking.openURL('https://github.com/BlueWallet/BlueWallet');
+                Linking.openURL('https://github.com/Actinium-project/AcmLightningWallet');
               }}
-              title="github.com/BlueWallet/BlueWallet"
+              title="github.com/Actinium-project/AcmLightningWallet"
             />
             <BlueSpacing20 />
 
@@ -72,7 +72,7 @@ export default class About extends Component {
                 color: BlueApp.settings.buttonTextColor,
               }}
               onPress={() => {
-                Linking.openURL('https://twitter.com/bluewalletio');
+                Linking.openURL('https://twitter.com/ActiniumCrypto');
               }}
               title="Follow us on Twitter"
             />
@@ -85,7 +85,7 @@ export default class About extends Component {
                 color: BlueApp.settings.buttonTextColor,
               }}
               onPress={() => {
-                Linking.openURL('https://t.me/bluewallet');
+                Linking.openURL('https://t.me/actiniumdiscussions');
               }}
               title="Join Telegram chat"
             />
@@ -112,7 +112,7 @@ export default class About extends Component {
                   }
                 });
               }}
-              title="Rate BlueWallet"
+              title="Rate Actinium Lightning Wallet"
             />
 
             <BlueSpacing20 />

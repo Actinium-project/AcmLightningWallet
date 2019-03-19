@@ -25,7 +25,7 @@ export class HDLegacyP2PKHWallet extends AbstractHDWallet {
     const seed = bip39.mnemonicToSeed(mnemonic);
     const root = bitcoin.HDNode.fromSeedBuffer(seed);
 
-    const path = "m/44'/0'/0'";
+    const path = "m/84'/228'/0'";
     const child = root.derivePath(path).neutered();
     this._xpub = child.toBase58();
 
@@ -51,7 +51,7 @@ export class HDLegacyP2PKHWallet extends AbstractHDWallet {
     const mnemonic = this.secret;
     const seed = bip39.mnemonicToSeed(mnemonic);
     const root = bitcoin.HDNode.fromSeedBuffer(seed);
-    const path = `m/44'/0'/0'/${internal ? 1 : 0}/${index}`;
+    const path = `m/84'/228'/0'/${internal ? 1 : 0}/${index}`;
     const child = root.derivePath(path);
 
     return child.keyPair.toWIF();

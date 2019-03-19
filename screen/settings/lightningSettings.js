@@ -65,9 +65,9 @@ export default class LightningSettings extends Component {
             backgroundColor: '#FFFFFF',
           }}
           onPress={() => {
-            Linking.openURL('https://github.com/BlueWallet/LndHub');
+            Linking.openURL('https://github.com/Actinium-Project/AcmLndHub');
           }}
-          title="github.com/BlueWallet/LndHub"
+          title="github.com/Actinium-project/AcmLndHub"
           color={BlueApp.settings.buttonTextColor}
           buttonStyle={{
             backgroundColor: '#FFFFFF',

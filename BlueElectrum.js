@@ -4,7 +4,7 @@ let bitcoin = require('acmjs-lib');
 let reverse = require('buffer-reverse');
 
 const storageKey = 'ELECTRUM_PEERS';
-const defaultPeer = { host: 'electrum.coinucopia.io', tcp: 50001 };
+const defaultPeer = { host: 'electrum1.actinium.org', tcp: 50001 };
 
 let mainClient = false;
 let mainConnected = false;
@@ -43,15 +43,7 @@ connectMain();
  */
 async function getRandomHardcodedPeer() {
   let hardcodedPeers = [
-    { host: 'node.ispol.sk', tcp: '50001' },
-    { host: 'electrum.vom-stausee.de', tcp: '50001' },
-    { host: 'orannis.com', tcp: '50001' },
-    { host: '139.162.14.142', tcp: '50001' },
-    { host: 'daedalus.bauerj.eu', tcp: '50001' },
-    { host: 'electrum.eff.ro', tcp: '50001' },
-    { host: 'electrum.anduck.net', tcp: '50001' },
-    { host: 'mooo.not.fyi', tcp: '50011' },
-    { host: 'electrum.coinucopia.io', tcp: '50001' },
+    { host: 'electrum2.actinium.org', tcp: '50001' }
   ];
   return hardcodedPeers[(hardcodedPeers.length * Math.random()) | 0];
 }

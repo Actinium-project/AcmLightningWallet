@@ -25,12 +25,12 @@ export class SegwitBech32Wallet extends LegacyWallet {
     const pubKey = Buffer.from(witness, 'hex');
     const pubKeyHash = bitcoin.crypto.hash160(pubKey);
     const scriptPubKey = bitcoin.script.witnessPubKeyHash.output.encode(pubKeyHash);
-    return bitcoin.address.fromOutputScript(scriptPubKey, bitcoin.networks.bitcoin);
+    return bitcoin.address.fromOutputScript(scriptPubKey, bitcoin.networks.actinium);
   }
 
   static scriptPubKeyToAddress(scriptPubKey) {
     const bitcoin = require('acmjs-lib');
     const scriptPubKey2 = Buffer.from(scriptPubKey, 'hex');
-    return bitcoin.address.fromOutputScript(scriptPubKey2, bitcoin.networks.bitcoin);
+    return bitcoin.address.fromOutputScript(scriptPubKey2, bitcoin.networks.actinium);
   }
 }

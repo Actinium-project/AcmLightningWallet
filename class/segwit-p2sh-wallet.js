@@ -17,7 +17,7 @@ export class SegwitP2SHWallet extends LegacyWallet {
     const redeemScript = bitcoin.script.witnessPubKeyHash.output.encode(pubKeyHash);
     const redeemScriptHash = bitcoin.crypto.hash160(redeemScript);
     const scriptPubkey = bitcoin.script.scriptHash.output.encode(redeemScriptHash);
-    return bitcoin.address.fromOutputScript(scriptPubkey, bitcoin.networks.bitcoin);
+    return bitcoin.address.fromOutputScript(scriptPubkey, bitcoin.networks.actinium);
   }
 
   getAddress() {

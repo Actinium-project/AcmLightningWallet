@@ -224,7 +224,7 @@ export default class Selftest extends Component {
       let scriptSig = bitcoin.script.witnessPubKeyHash.output.encode(keyhash);
       let addressBytes = bitcoin.crypto.hash160(scriptSig);
       let outputScript = bitcoin.script.scriptHash.output.encode(addressBytes);
-      let address = bitcoin.address.fromOutputScript(outputScript, bitcoin.networks.bitcoin);
+      let address = bitcoin.address.fromOutputScript(outputScript, bitcoin.networks.actinium);
 
       if (address !== '3GcKN7q7gZuZ8eHygAhHrvPa5zZbG5Q1rK') {
         errorMessage += 'bip49 is not ok; ';

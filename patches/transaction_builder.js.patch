@@ -1,0 +1,15 @@
+diff --git a/node_modules/src/transaction_builder.js b/node_modules/src/transaction_builder.js
+index 3014a2a..4f5ae45 100644
+--- a/node_modules/src/transaction_builder.js
++++ b/node_modules/src/transaction_builder.js
+@@ -511,7 +511,9 @@ TransactionBuilder.prototype.addInput = function (txHash, vout, sequence, prevOu
+   // is it a hex string?
+   if (typeof txHash === 'string') {
+     // transaction hashs's are displayed in reverse order, un-reverse it
+-    txHash = Buffer.from(txHash, 'hex').reverse()
++    //txHash = Buffer.from(txHash, 'hex').reverse()
++    var bufferReverse = require('buffer-reverse');
++    txHash = bufferReverse(new Buffer(txHash, 'hex'));
+ 
+   // is it a Transaction object?
+   } else if (txHash instanceof Transaction) {

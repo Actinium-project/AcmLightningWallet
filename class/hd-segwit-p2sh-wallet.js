@@ -92,7 +92,7 @@ export class HDSegwitP2SHWallet extends AbstractHDWallet {
     const mnemonic = this.secret;
     const seed = bip39.mnemonicToSeed(mnemonic);
     const root = bitcoin.HDNode.fromSeedBuffer(seed);
-    const path = `m/49'/0'/0'/${internal ? 1 : 0}/${index}`;
+    const path = `m/84'/228'/0'/${internal ? 1 : 0}/${index}`;
     const child = root.derivePath(path);
 
     return child.keyPair.toWIF();
@@ -135,7 +135,7 @@ export class HDSegwitP2SHWallet extends AbstractHDWallet {
     const seed = bip39.mnemonicToSeed(mnemonic);
     const root = bitcoin.HDNode.fromSeedBuffer(seed);
 
-    const path = "m/49'/0'/0'";
+    const path = "m/84'/228'/0'";
     const child = root.derivePath(path).neutered();
     const xpub = child.toBase58();
 
