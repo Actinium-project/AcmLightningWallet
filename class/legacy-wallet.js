@@ -103,7 +103,7 @@ export class LegacyWallet extends AbstractWallet {
   async fetchBalance() {
     try {
       const api = new Frisbee({
-        baseURI: 'https://api.blockcypher.com/v1/btc/main/addrs/',
+        baseURI: 'https://explorer3.actinium.org/address/',
       });
 
       let response = await api.get(
@@ -131,7 +131,7 @@ export class LegacyWallet extends AbstractWallet {
    */
   async fetchUtxo() {
     const api = new Frisbee({
-      baseURI: 'https://api.blockcypher.com/v1/btc/main/addrs/',
+      baseURI: 'https://explorer3.actinium.org/address/',
     });
 
     let response;
@@ -177,7 +177,7 @@ export class LegacyWallet extends AbstractWallet {
   async fetchTransactions() {
     try {
       const api = new Frisbee({
-        baseURI: 'https://api.blockcypher.com/',
+        baseURI: 'https://explorer3.actinium.org/',
       });
 
       let after = 0;
@@ -191,7 +191,7 @@ export class LegacyWallet extends AbstractWallet {
 
       while (1) {
         let response = await api.get(
-          'v1/btc/main/addrs/' +
+          'address/' +
             this.getAddress() +
             '/full?after=' +
             after +
