@@ -353,29 +353,6 @@ export default class WalletTransactions extends Component {
         {this.renderWalletHeader()}
 
         <View style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
-          {this.state.wallet.type === LightningCustodianWallet.type && (
-            <TouchableOpacity
-              onPress={() => {
-                console.log('navigating to LappBrowser');
-                navigate('LappBrowser', { fromSecret: this.state.wallet.getSecret(), fromWallet: this.state.wallet });
-              }}
-            >
-              <View
-                style={{
-                  margin: 16,
-                  backgroundColor: '#f2f2f2',
-                  borderRadius: 9,
-                  minWidth: 343,
-                  minHeight: 49,
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  alignSelf: 'center',
-                }}
-              >
-                <Text style={{ color: '#062453', fontSize: 18 }}>marketplace</Text>
-              </View>
-            </TouchableOpacity>
-          )}
           <FlatList
             onEndReachedThreshold={0.3}
             onEndReached={() => {

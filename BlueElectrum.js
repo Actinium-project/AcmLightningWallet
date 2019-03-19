@@ -43,7 +43,8 @@ connectMain();
  */
 async function getRandomHardcodedPeer() {
   let hardcodedPeers = [
-    { host: 'electrum2.actinium.org', tcp: '50001' }
+    { host: 'electrum1.actinium.org', tcp: 50001 },
+    { host: 'electrum2.actinium.org', tcp: 50001 }
   ];
   return hardcodedPeers[(hardcodedPeers.length * Math.random()) | 0];
 }
