@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { SegwitP2SHWallet, LegacyWallet, HDSegwitP2SHWallet } from '../class';
 let BigNumber = require('bignumber.js');
 let encryption = require('../encryption');
-let bitcoin = require('bitcoinjs-lib');
+let bitcoin = require('acmjs-lib');
 let BlueElectrum = require('../BlueElectrum');
 
 export default class Selftest extends Component {

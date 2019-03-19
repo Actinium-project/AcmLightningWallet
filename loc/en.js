@@ -11,7 +11,7 @@ module.exports = {
     select_wallet: 'Select Wallet',
     options: 'options',
     createBitcoinWallet:
-      'You currently do not have a Bitcoin wallet. In order to fund a Lightning wallet, a Bitcoin wallet needs to be created or imported. Would you like to continue anyway?',
+      'You currently do not have a Actinium wallet. In order to fund a Lightning wallet, a Actinium wallet needs to be created or imported. Would you like to continue anyway?',
     list: {
       app_name: 'BlueWallet',
       title: 'wallets',
@@ -23,7 +23,7 @@ module.exports = {
       latest_transaction: 'latest transaction',
       empty_txs1: 'Your transactions will appear here,',
       empty_txs2: 'none at the moment',
-      tap_here_to_buy: 'Tap here to buy Bitcoin',
+      tap_here_to_buy: 'Tap here to buy Actinium',
     },
     reorder: {
       title: 'Reorder Wallets',
@@ -43,7 +43,7 @@ module.exports = {
       imported: 'Imported',
       coming_soon: 'Coming soon',
       lightning: 'Lightning',
-      bitcoin: 'Bitcoin',
+      bitcoin: 'Actinium',
     },
     details: {
       title: 'Wallet',
@@ -59,7 +59,7 @@ module.exports = {
       save: 'Save',
       delete_this_wallet: 'Delete this wallet',
       export_backup: 'Export / backup',
-      buy_bitcoin: 'Buy Bitcoin',
+      buy_bitcoin: 'Buy Actinium',
       show_xpub: 'Show wallet XPUB',
     },
     export: {
@@ -121,8 +121,8 @@ module.exports = {
       total_exceeds_balance: 'The sending amount exceeds the available balance.',
       create_tx_error: 'There was an error creating the transaction. Please, make sure the address is valid.',
       address: 'address',
-      amount_placeholder: 'amount to send (in BTC)',
-      fee_placeholder: 'plus transaction fee (in BTC)',
+      amount_placeholder: 'amount to send (in ACM)',
+      fee_placeholder: 'plus transaction fee (in ACM)',
       note_placeholder: 'note to self',
       cancel: 'Cancel',
       scan: 'Scan',
@@ -165,7 +165,7 @@ module.exports = {
     },
   },
   buyBitcoin: {
-    header: 'Buy Bitcoin',
+    header: 'Buy Actinium',
     tap_your_address: 'Tap your address to copy it to clipboard:',
     copied: 'Copied to Clipboard!',
   },

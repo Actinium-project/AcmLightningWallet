@@ -11,12 +11,12 @@ module.exports = {
     select_wallet: 'Wähle eine Wallet',
     options: 'Einstellungen',
     createBitcoinWallet:
-      'Um eine Lightning wallet zu verwenden, muss erstmal eine Bitcoin Wallet eingerichtet werden. Bitte erstell oder importier eine Bitcoin Wallet.',
+      'Um eine Lightning wallet zu verwenden, muss erstmal eine Actinium Wallet eingerichtet werden. Bitte erstell oder importier eine Actinium Wallet.',
     list: {
       app_name: 'BlueWallet',
       title: 'Wallets',
       header:
-        'Eine Wallet spiegelt ein Paar kryptographische Schlüssel wider. Einen geheimen Schlüseel und eine Adresse als öffentlichen Schlüssel. Den öffentlichen Schlüssel kann man zum Empfang von Bitcoin teilen.',
+        'Eine Wallet spiegelt ein Paar kryptographische Schlüssel wider. Einen geheimen Schlüseel und eine Adresse als öffentlichen Schlüssel. Den öffentlichen Schlüssel kann man zum Empfang von Actinium teilen.',
       add: 'Wallet hinzufügen',
       create_a_wallet: 'Wallet erstellen',
       create_a_wallet1: 'Es ist kostenlos und du kannst',
@@ -24,7 +24,7 @@ module.exports = {
       latest_transaction: 'Lezte Transaktion',
       empty_txs1: 'Deine Transaktionen erscheinen hier',
       empty_txs2: 'Noch keine Transaktionen',
-      tap_here_to_buy: 'Klicke hier, um Bitcoin zu kaufen',
+      tap_here_to_buy: 'Klicke hier, um Actinium zu kaufen',
     },
     reorder: {
       title: 'Wallets neu ordnen',
@@ -44,7 +44,7 @@ module.exports = {
       imported: 'Importiert',
       coming_soon: 'Demnächst verfügbar',
       lightning: 'Lightning',
-      bitcoin: 'Bitcoin',
+      bitcoin: 'Actinium',
     },
     details: {
       title: 'Wallet',
@@ -60,7 +60,7 @@ module.exports = {
       save: 'Sichern',
       delete_this_wallet: 'Lösche diese Wallet',
       export_backup: 'Exportieren / Backup',
-      buy_bitcoin: 'Bitcoin kaufen',
+      buy_bitcoin: 'Actinium kaufen',
       show_xpub: 'Wallet XPUB zeigen',
     },
     export: {
@@ -166,7 +166,7 @@ module.exports = {
     },
   },
   buyBitcoin: {
-    header: 'Kaufe Bitcoin',
+    header: 'Kaufe Actinium',
     tap_your_address: 'Adresse antippen, um sie in die Zwischenablage zu kopieren:',
     copied: 'In die Zwischenablage kopiert!',
   },

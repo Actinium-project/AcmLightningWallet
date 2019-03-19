@@ -6,7 +6,7 @@
  * https://github.com/Overtorment/Cashier-BTC
  *
  **/
-let bitcoinjs = require('bitcoinjs-lib');
+let bitcoinjs = require('acmjs-lib');
 const toSatoshi = num => parseInt((num * 100000000).toFixed(0));
 
 exports.createHDTransaction = function(utxos, toAddress, amount, fixedFee, changeAddress) {
@@ -220,7 +220,7 @@ exports.generateNewSegwitAddress = function() {
 };
 
 exports.URI = function(paymentInfo) {
-  let uri = 'bitcoin:';
+  let uri = 'actinium:';
   uri += paymentInfo.address;
   uri += '?amount=';
   uri += parseFloat(paymentInfo.amount / 100000000);

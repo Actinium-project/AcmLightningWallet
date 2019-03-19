@@ -1,7 +1,7 @@
 import { AbstractHDWallet } from './abstract-hd-wallet';
 import Frisbee from 'frisbee';
 import { NativeModules } from 'react-native';
-import bitcoin from 'bitcoinjs-lib';
+import bitcoin from 'acmjs-lib';
 import bip39 from 'bip39';
 import BigNumber from 'bignumber.js';
 import b58 from 'bs58check';

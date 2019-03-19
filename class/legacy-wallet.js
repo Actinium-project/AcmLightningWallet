@@ -5,7 +5,7 @@ import Frisbee from 'frisbee';
 import { NativeModules } from 'react-native';
 const { RNRandomBytes } = NativeModules;
 const BigNumber = require('bignumber.js');
-const bitcoin = require('bitcoinjs-lib');
+const bitcoin = require('acmjs-lib');
 const signer = require('../models/signer');
 const BlueElectrum = require('../BlueElectrum');
 

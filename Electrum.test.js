@@ -7,8 +7,8 @@ describe('Electrum', () => {
   it('ElectrumClient can connect and query', async () => {
     jasmine.DEFAULT_TIMEOUT_INTERVAL = 100 * 1000;
     const ElectrumClient = require('electrum-client');
-    let bitcoin = require('bitcoinjs-lib');
-    // let bitcoin = require('bitcoinjs-lib');
+    let bitcoin = require('acmjs-lib');
+    // let bitcoin = require('acmjs-lib');
 
     const peer = { host: 'electrum.coinucopia.io', ssl: 50002, tcp: 50001, pruning: null, http: null, https: null };
     console.log('begin connection:', JSON.stringify(peer));

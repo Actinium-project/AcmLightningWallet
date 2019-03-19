@@ -1,5 +1,5 @@
 import { LegacyWallet } from './legacy-wallet';
-const bitcoin = require('bitcoinjs-lib');
+const bitcoin = require('acmjs-lib');
 
 export class WatchOnlyWallet extends LegacyWallet {
   static type = 'watchOnly';

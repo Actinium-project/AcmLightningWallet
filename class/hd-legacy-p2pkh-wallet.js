@@ -1,5 +1,5 @@
 import { AbstractHDWallet } from './abstract-hd-wallet';
-import bitcoin from 'bitcoinjs-lib';
+import bitcoin from 'acmjs-lib';
 import bip39 from 'bip39';
 import BigNumber from 'bignumber.js';
 import signer from '../models/signer';

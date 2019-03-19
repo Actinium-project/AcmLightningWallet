@@ -88,7 +88,7 @@ export default class BuyBitcoin extends Component {
               onPress={() => {
                 Linking.openURL('https://bluewallet.io/buy-bitcoin-redirect.html');
               }}
-              title="Buy Bitcoin"
+              title="Buy Actinium"
             />
 
             <BlueSpacing40 />

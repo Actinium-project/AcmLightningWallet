@@ -1,5 +1,5 @@
 import { LegacyWallet } from './legacy-wallet';
-const bitcoin = require('bitcoinjs-lib');
+const bitcoin = require('acmjs-lib');
 const signer = require('../models/signer');
 const BigNumber = require('bignumber.js');
 

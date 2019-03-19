@@ -6,8 +6,8 @@ import MainBottomTabs from './MainBottomTabs';
 import NavigationService from './NavigationService';
 import { BlueTextCentered, BlueButton } from './BlueComponents';
 import ReactNativeHapticFeedback from 'react-native-haptic-feedback';
-const bitcoin = require('bitcoinjs-lib');
-const bitcoinModalString = 'Bitcoin address';
+const bitcoin = require('acmjs-lib');
+const bitcoinModalString = 'Actinium address';
 const lightningModalString = 'Lightning Invoice';
 const loc = require('./loc');
 /** @type {AppStorage} */
@@ -56,7 +56,7 @@ export default class App extends React.Component {
   hasSchema(schemaString) {
     if (typeof schemaString !== 'string' || schemaString.length <= 0) return false;
     const lowercaseString = schemaString.trim().toLowerCase();
-    return lowercaseString.startsWith('bitcoin:') || lowercaseString.startsWith('lightning:');
+    return lowercaseString.startsWith('actinium:') || lowercaseString.startsWith('lightning:');
   }
 
   isBitcoinAddress(address) {
@@ -69,7 +69,7 @@ export default class App extends React.Component {
       isValidBitcoinAddress = false;
     }
     if (!isValidBitcoinAddress) {
-      if (address.indexOf('bitcoin:') === 0 || address.indexOf('BITCOIN:') === 0) {
+      if (address.indexOf('actinium:') === 0 || address.indexOf('ACTINIUM:') === 0) {
         isValidBitcoinAddress = true;
         this.setState({ clipboardContentModalAddressType: bitcoinModalString });
       }
@@ -79,7 +79,7 @@ export default class App extends React.Component {
 
   isLightningInvoice(invoice) {
     let isValidLightningInvoice = false;
-    if (invoice.indexOf('lightning:lnb') === 0 || invoice.indexOf('LIGHTNING:lnb') === 0 || invoice.toLowerCase().startsWith('lnb')) {
+    if (invoice.indexOf('lightning:lnacm') === 0 || invoice.indexOf('LIGHTNING:lnacm') === 0 || invoice.toLowerCase().startsWith('lnacm')) {
       this.setState({ clipboardContentModalAddressType: lightningModalString });
       isValidLightningInvoice = true;
     }

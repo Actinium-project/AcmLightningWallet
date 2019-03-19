@@ -1,6 +1,6 @@
 import { AsyncStorage } from 'react-native';
 const ElectrumClient = require('electrum-client');
-let bitcoin = require('bitcoinjs-lib');
+let bitcoin = require('acmjs-lib');
 let reverse = require('buffer-reverse');
 
 const storageKey = 'ELECTRUM_PEERS';

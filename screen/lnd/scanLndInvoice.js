@@ -188,7 +188,7 @@ export default class ScanLndInvoice extends React.Component {
   }
 
   processTextForInvoice = text => {
-    if (text.toLowerCase().startsWith('lnb') || text.toLowerCase().startsWith('lightning:lnb')) {
+    if (text.toLowerCase().startsWith('lnacm') || text.toLowerCase().startsWith('lightning:lnacm')) {
       this.processInvoice(text);
     } else {
       this.setState({ decoded: undefined, expiresIn: undefined, destination: text });

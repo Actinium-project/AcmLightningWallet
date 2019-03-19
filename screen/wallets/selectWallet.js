@@ -131,10 +131,10 @@ export default class SelectWallet extends Component {
       return (
         <SafeBlueArea style={{ flex: 1 }}>
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', paddingTop: 20 }}>
-            <BlueText style={{ textAlign: 'center' }}>There are currently no Bitcoin wallets available.</BlueText>
+            <BlueText style={{ textAlign: 'center' }}>There are currently no Actinium wallets available.</BlueText>
             <BlueSpacing20 />
             <BlueText style={{ textAlign: 'center' }}>
-              A Bitcoin wallet is required to refill Lightning wallets. Please, create or import one.
+              A Actinium wallet is required to refill Lightning wallets. Please, create or import one.
             </BlueText>
           </View>
         </SafeBlueArea>

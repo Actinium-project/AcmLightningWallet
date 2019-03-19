@@ -3,7 +3,7 @@ import Frisbee from 'frisbee';
 import { WatchOnlyWallet } from './watch-only-wallet';
 const bip39 = require('bip39');
 const BigNumber = require('bignumber.js');
-const bitcoin = require('bitcoinjs-lib');
+const bitcoin = require('acmjs-lib');
 const BlueElectrum = require('../BlueElectrum');
 
 export class AbstractHDWallet extends LegacyWallet {

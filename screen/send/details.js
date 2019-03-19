@@ -36,7 +36,7 @@ let BigNumber = require('bignumber.js');
 /** @type {AppStorage} */
 let BlueApp = require('../../BlueApp');
 let loc = require('../../loc');
-let bitcoin = require('bitcoinjs-lib');
+let bitcoin = require('acmjs-lib');
 
 const btcAddressRx = /^[a-zA-Z0-9]{26,35}$/;
 
@@ -65,7 +65,7 @@ export default class SendDetails extends Component {
     const wallets = BlueApp.getWallets().filter(wallet => wallet.type !== LightningCustodianWallet.type);
 
     if (wallets.length === 0) {
-      alert('Before creating a transaction, you must first add a Bitcoin wallet.');
+      alert('Before creating a transaction, you must first add a Actinium wallet.');
       return props.navigation.goBack(null);
     } else {
       if (!fromWallet && wallets.length > 0) {
@@ -90,9 +90,9 @@ export default class SendDetails extends Component {
   }
 
   /**
-   * TODO: refactor this mess, get rid of regexp, use https://github.com/bitcoinjs/bitcoinjs-lib/issues/890 etc etc
+   * TODO: refactor this mess, get rid of regexp, use https://github.com/bitcoinjs/acmjs-lib/issues/890 etc etc
    *
-   * @param data {String} Can be address or `bitcoin:xxxxxxx` uri scheme, or invalid garbage
+   * @param data {String} Can be address or `actinium:xxxxxxx` uri scheme, or invalid garbage
    */
   processAddressData = data => {
     this.setState(
@@ -101,7 +101,7 @@ export default class SendDetails extends Component {
         if (BitcoinBIP70TransactionDecode.matchesPaymentURL(data)) {
           this.processBIP70Invoice(data);
         } else {
-          const dataWithoutSchema = data.replace('bitcoin:', '');
+          const dataWithoutSchema = data.replace('actinium:', '');
           if (btcAddressRx.test(dataWithoutSchema) || (dataWithoutSchema.indexOf('bc1') === 0 && dataWithoutSchema.indexOf('?') === -1)) {
             this.setState({
               address: dataWithoutSchema,
@@ -111,8 +111,8 @@ export default class SendDetails extends Component {
           } else {
             let address, options;
             try {
-              if (!data.toLowerCase().startsWith('bitcoin:')) {
-                data = `bitcoin:${data}`;
+              if (!data.toLowerCase().startsWith('actinium:')) {
+                data = `actinium:${data}`;
               }
               const decoded = bip21.decode(data);
               address = decoded.address;
@@ -173,7 +173,7 @@ export default class SendDetails extends Component {
           } catch (error) {
             console.log(error);
             this.setState({ isLoading: false });
-            alert('Error: Unable to decode Bitcoin address');
+            alert('Error: Unable to decode Actinium address');
           }
         }
       } else {
@@ -327,7 +327,7 @@ export default class SendDetails extends Component {
       console.log('validation error');
     } else if (this.state.address) {
       const address = this.state.address.trim().toLowerCase();
-      if (address.startsWith('lnb') || address.startsWith('lightning:lnb')) {
+      if (address.startsWith('lnacm') || address.startsWith('lightning:lnacm')) {
         error =
           'This address appears to be for a Lightning invoice. Please, go to your Lightning wallet in order to make a payment for this invoice.';
         console.log('validation error');
@@ -582,7 +582,7 @@ export default class SendDetails extends Component {
                 onChangeText={text => {
                   if (!this.processBIP70Invoice(text)) {
                     this.setState({
-                      address: text.trim().replace('bitcoin:', ''),
+                      address: text.trim().replace('actinium:', ''),
                       isLoading: false,
                       bip70TransactionExpiration: null,
                     });

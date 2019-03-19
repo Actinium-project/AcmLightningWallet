@@ -160,7 +160,7 @@ export default class ScanQrWif extends React.Component {
     let watchAddr = ret.data;
 
     // Is it BIP21 format?
-    if (ret.data.indexOf('bitcoin:') === 0 || ret.data.indexOf('BITCOIN:') === 0) {
+    if (ret.data.indexOf('actinium:') === 0 || ret.data.indexOf('ACTINIUM:') === 0) {
       try {
         watchAddr = bip21.decode(ret.data).address;
       } catch (err) {

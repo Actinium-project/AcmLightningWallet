@@ -46,7 +46,7 @@ export default class About extends Component {
       <SafeBlueArea forceInset={{ horizontal: 'always' }} style={{ flex: 1 }}>
         <ScrollView>
           <BlueCard>
-            <BlueTextCentered h4>BlueWallet is a free and open source Bitcoin wallet. Licensed MIT.</BlueTextCentered>
+            <BlueTextCentered h4>BlueWallet is a free and open source Actinium wallet. Licensed MIT.</BlueTextCentered>
             <BlueSpacing20 />
 
             <BlueTextCentered h4>Always backup your keys</BlueTextCentered>

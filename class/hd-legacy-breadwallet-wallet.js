@@ -1,6 +1,6 @@
 import { AbstractHDWallet } from './abstract-hd-wallet';
 import Frisbee from 'frisbee';
-import bitcoin from 'bitcoinjs-lib';
+import bitcoin from 'acmjs-lib';
 import bip39 from 'bip39';
 
 /**
