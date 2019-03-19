@@ -1,4 +1,4 @@
-package io.bluewallet.bluewallet;
+package org.actinium.lightningwallet;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -13,7 +13,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "BlueWallet"; // this one too
+        return "AcmLNWallet"; // this one too
     }
 
     @Override

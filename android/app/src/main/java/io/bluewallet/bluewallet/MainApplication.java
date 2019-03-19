@@ -1,4 +1,4 @@
-package io.bluewallet.bluewallet;
+package org.actinium.lightningwallet;
 
 import android.app.Application;
 

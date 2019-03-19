@@ -13,7 +13,7 @@ module.exports = {
     createBitcoinWallet:
       'Non hai un portafoglio Bitcoin attualmente. Per ricaricare un portafoglio Lightning, è necessario creare o importare un portafoglio Bitcoin. Vuoi continuare lo stesso?',
     list: {
-      app_name: 'BlueWallet',
+      app_name: 'AcmLNWallet',
       title: 'Portafogli',
       header:
         'Un portafoglio rappresenta la coppia fra un segreto (chiave privata) e un indirizzo' +
@@ -74,7 +74,7 @@ module.exports = {
     import: {
       title: 'Importa',
       explanation:
-        'Scrivi qui la tua frase mnemonica, chiave privata, WIF, o qualunque altra cosa tu abbia. BlueWallet tenterà di indovinare il formato corretto e importerà il tuo portafoglio',
+        'Scrivi qui la tua frase mnemonica, chiave privata, WIF, o qualunque altra cosa tu abbia. AcmLNWallet tenterà di indovinare il formato corretto e importerà il tuo portafoglio',
       imported: 'Importato',
       error: 'Importazione fallita. Assicurati che le informazioni fornite siano valide.',
       success: 'Fatto',
@@ -194,10 +194,10 @@ module.exports = {
     title: 'Negazione Plausibile',
     help:
       'In alcune circostanze, potresti essere costretto a rivelare la ' +
-      'password. Per mantenere i tuoi Bitcoin al sicuro, BlueWallet può creare un altro ' +
+      'password. Per mantenere i tuoi Bitcoin al sicuro, AcmLNWallet può creare un altro ' +
       'archivio criptato, con una password diversa. Se costretto, ' +
       'puoi rivelare questa password alle terze parti. Se inserita in ' +
-      'BlueWallet, questa sbloccherà un "falso" archivio. Esso sembrerà ' +
+      'AcmLNWallet, questa sbloccherà un "falso" archivio. Esso sembrerà ' +
       'autentico alle terze parti, ma manterrà segretamente il tuo archivio principale ' +
       'con i Bitcoin al sicuro.',
     help2: 'Il nuovo archivio sarà completamente funzionante, e puoi conservarci ' + 'piccole quantità così sembrerà più credibile.',

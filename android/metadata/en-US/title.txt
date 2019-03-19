@@ -1,1 +1,1 @@
-BlueWallet - Bitcoin & Lightning Wallet
+AcmLNWallet - Bitcoin & Lightning Wallet

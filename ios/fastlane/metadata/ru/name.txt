@@ -1,1 +1,1 @@
-BlueWallet - Биткоин кошелек
+AcmLNWallet - Биткоин кошелек

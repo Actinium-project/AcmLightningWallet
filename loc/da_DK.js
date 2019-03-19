@@ -12,7 +12,7 @@ module.exports = {
     options: 'valgmuligheder',
     createBitcoinWallet: 'In order to use a Lightning wallet, a Bitcoin wallet is needed to fund it. Would you like to continue anyway?',
     list: {
-      app_name: 'BlueWallet',
+      app_name: 'AcmLNWallet',
       title: 'wallets',
       header: 'En wallet består af par af hemmelige (private nøgler) og en adresse' + 'som du kan dele med andre for at modtage coins.',
       add: 'Tilføj Wallet',
@@ -71,7 +71,7 @@ module.exports = {
     import: {
       title: 'importer',
       explanation:
-        'Indtast din huskeregel, private nøgle, WIF, eller hvad du end har. BlueWallet vil forsøge at gætte det rigtige format og importere din wallet',
+        'Indtast din huskeregel, private nøgle, WIF, eller hvad du end har. AcmLNWallet vil forsøge at gætte det rigtige format og importere din wallet',
       imported: 'Importeret',
       error: 'Importen lykkedes ikke. Er det en gyldig nøgle?',
       success: 'Succes',
@@ -195,7 +195,7 @@ module.exports = {
       'adgangskode. For at beskytte dine coins kan du med Bluewallet lave ' +
       'et falsk krypteret lager, med en anden kode. I en presset situation, ' +
       'kan du give denne adgangskode istedet. Hvis denne kode indtastes i ' +
-      'BlueWallet, vil brugeren se den alternative wallet. Det vil se helt' +
+      'AcmLNWallet, vil brugeren se den alternative wallet. Det vil se helt' +
       'legitimt ud for andre, og dermed beskytte din originale wallet og ' +
       'dine coins.',
     help2: 'Det nye lager vil være fuldt funktionsdygtigt, og du kan evt have nogle ' + 'småbeløb så det ser troværdigt ud.',

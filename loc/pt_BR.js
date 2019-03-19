@@ -14,7 +14,7 @@ module.exports = {
 
     list: {
       tabBarLabel: 'Carteiras',
-      app_name: 'BlueWallet',
+      app_name: 'AcmLNWallet',
       title: 'carteiras',
       header: 'Uma carteira representa um par composto de uma chave privada e um endereço que você pode .',
       add: 'adicionar wallet',
@@ -196,9 +196,9 @@ module.exports = {
     title: 'Negação plausível',
     help:
       'Em algumas circunstâncias, você pode ser forçado a revelar uma ' +
-      'senha. Para manter seus bitcoins seguros, A BlueWallet pode criar ' +
+      'senha. Para manter seus bitcoins seguros, A AcmLNWallet pode criar ' +
       'uma senha alternativa. Sob pressão, você pode revelar essa senha ao ' +
-      'invés da senha principal. Quando inserida na BlueWallet, esta abrirá ' +
+      'invés da senha principal. Quando inserida na AcmLNWallet, esta abrirá ' +
       'uma interface falsa, que parecerá legítima a um terceiro, enquanto ' +
       'suas carteiras originais continuarão à salvo em segredo.',
     help2:

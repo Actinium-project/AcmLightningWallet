@@ -235,7 +235,7 @@ export default class ScanQrWif extends React.Component {
     if (hasCameraPermission === null) {
       return <View />;
     } else if (hasCameraPermission === false) {
-      alert('BlueWallet does not have permission to use your camera.');
+      alert('AcmLNWallet does not have permission to use your camera.');
       this.props.navigation.goBack(null);
       return <View />;
     } else {

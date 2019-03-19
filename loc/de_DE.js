@@ -13,7 +13,7 @@ module.exports = {
     createBitcoinWallet:
       'Um eine Lightning wallet zu verwenden, muss erstmal eine Actinium Wallet eingerichtet werden. Bitte erstell oder importier eine Actinium Wallet.',
     list: {
-      app_name: 'BlueWallet',
+      app_name: 'AcmLNWallet',
       title: 'Wallets',
       header:
         'Eine Wallet spiegelt ein Paar kryptographische Schlüssel wider. Einen geheimen Schlüseel und eine Adresse als öffentlichen Schlüssel. Den öffentlichen Schlüssel kann man zum Empfang von Actinium teilen.',
@@ -73,7 +73,7 @@ module.exports = {
     import: {
       title: 'Importieren',
       explanation:
-        'Gib hier deine mnemonische Phrase, deinen privaten Schlüssel, WIF oder worüber du auch immer verfügst ein. BlueWallet wird bestmöglich dein Format interpretieren und die Wallet importieren',
+        'Gib hier deine mnemonische Phrase, deinen privaten Schlüssel, WIF oder worüber du auch immer verfügst ein. AcmLNWallet wird bestmöglich dein Format interpretieren und die Wallet importieren',
       imported: 'Importiert',
       error: 'Fehler beim Import. Ist die Eingabe korrekt?',
       success: 'Erfolg',
@@ -195,10 +195,10 @@ module.exports = {
     help:
       'Unter bestimmten Umständen könntest du dazu gezwungen werden, ' +
       'dein Passwort preiszugeben. Um deine Bitcoins zu sichern, kann ' +
-      'BlueWallet einen weiteren verschlüsselten Speicher mit einem ' +
+      'AcmLNWallet einen weiteren verschlüsselten Speicher mit einem ' +
       'anderen Passwort erstellen. Unter Druck kannst du das ' +
       'zweite Passwort an Fremde weitergeben. Wenn eingegeben, öffnet ' +
-      'BlueWallet einen anderen Speicher zur Täuschung. Dies wirkt ' +
+      'AcmLNWallet einen anderen Speicher zur Täuschung. Dies wirkt ' +
       'auf Fremde täuschend echt und dein Hauptspeicher bleibt geheim ' +
       'und sicher.',
     help2: 'Der andere Speicher ist voll funktional und man kann einen Minimalbetrag für die Glaubhaftigkeit hinterlegen.',

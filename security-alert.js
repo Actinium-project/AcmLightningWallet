@@ -10,7 +10,7 @@ async function start() {
   if (times < 3 && Platform.OS === 'ios') {
     Alert.alert(
       'Security alert',
-      'If you used BlueWallet prior to version 3.1.0 you are advised to re-create wallets ' +
+      'If you used AcmLNWallet prior to version 3.1.0 you are advised to re-create wallets ' +
         'and transfer all funds from old wallets to new ones, as older versions might have security issues',
       [
         { text: 'Remind me later', onPress: () => AsyncStorage.setItem(key, '0') },
