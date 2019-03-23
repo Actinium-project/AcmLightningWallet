@@ -102,7 +102,7 @@ export default class SendDetails extends Component {
           this.processBIP70Invoice(data);
         } else {
           const dataWithoutSchema = data.replace('actinium:', '');
-          if (btcAddressRx.test(dataWithoutSchema) || (dataWithoutSchema.indexOf('bc1') === 0 && dataWithoutSchema.indexOf('?') === -1)) {
+          if (btcAddressRx.test(dataWithoutSchema) || (dataWithoutSchema.indexOf('acm1') === 0 && dataWithoutSchema.indexOf('?') === -1)) {
             this.setState({
               address: dataWithoutSchema,
               bip70TransactionExpiration: null,
@@ -122,7 +122,7 @@ export default class SendDetails extends Component {
               this.setState({ isLoading: false });
             }
             console.log(options);
-            if (btcAddressRx.test(address) || address.indexOf('bc1') === 0) {
+            if (btcAddressRx.test(address) || address.indexOf('acm1') === 0) {
               this.setState({
                 address,
                 amount: options.amount,

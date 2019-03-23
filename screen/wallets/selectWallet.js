@@ -134,7 +134,7 @@ export default class SelectWallet extends Component {
             <BlueText style={{ textAlign: 'center' }}>There are currently no Actinium wallets available.</BlueText>
             <BlueSpacing20 />
             <BlueText style={{ textAlign: 'center' }}>
-              A Actinium wallet is required to refill Lightning wallets. Please, create or import one.
+              An Actinium wallet is required to refill Lightning wallets. Please, create or import one.
             </BlueText>
           </View>
         </SafeBlueArea>

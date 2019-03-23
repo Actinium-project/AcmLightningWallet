@@ -40,7 +40,7 @@
     "@remobile/react-native-qrcode-local-image": "1.0.4",
     "acmjs-lib": "https://github.com/Actinium-project/acmjs-lib.git",
     "bignumber.js": "8.0.2",
-    "bip21": "2.0.2",
+    "bip21": "https://github.com/Actinium-project/bip21.git",
     "bip39": "2.5.0",
     "buffer": "5.2.1",
     "buffer-reverse": "1.0.1",
